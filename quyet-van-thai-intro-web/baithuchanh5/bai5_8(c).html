@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Menu bên trái -->
+                    <nav id="contactMenu" class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar position-fixed vh-100" style="z-index: 1020;">
+                        <div class="p-3">
+                            <h5 class="mb-3">Liên hệ</h5>
+                            <nav class="nav flex-column nav-pills">
+                                <a class="nav-link active" href="#contact-info">Thông tin liên hệ</a>
+                                <a class="nav-link" href="#contact-form">Gửi tin nhắn</a>
+                                <a class="nav-link" href="#map">Bản đồ</a>
+                            </nav>
+                        </div>
+                    </nav>
+                    <!-- Nội dung bên phải -->
+                    <div class="offset-md-3 offset-lg-2 col-md-9 col-lg-10 ps-md-5">
+                        <div data-bs-spy="scroll" data-bs-target="#contactMenu" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="position: relative; height: 95vh; overflow: auto;">
+                            <section id="contact-info" class="pt-5">
+                                <h2>Thông tin liên hệ</h2>
+                                <ul class="list-unstyled">
+                                    <li><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP.HCM</li>
+                                    <li><strong>Điện thoại:</strong> 0123 456 789</li>
+                                    <li><strong>Email:</strong> lienhe@example.com</li>
+                                </ul>
+                            </section>
+                            <section id="contact-form" class="pt-5">
+                                <h2>Gửi tin nhắn</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Họ tên</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nhập họ tên">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Nội dung</label>
+                                        <textarea class="form-control" id="message" rows="4" placeholder="Nhập nội dung"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Gửi</button>
+                                </form>
+                            </section>
+                            <section id="map" class="pt-5">
+                                <h2>Bản đồ</h2>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=106.695,10.776,106.705,10.786&amp;layer=mapnik" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            // Kích hoạt scrollspy cho menu liên hệ
+            var scrollSpy = new bootstrap.ScrollSpy(document.querySelector('.scrollspy-example'), {
+                target: '#contactMenu',
+                offset: 0
+            });
+        </script>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

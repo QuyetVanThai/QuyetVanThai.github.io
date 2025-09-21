@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+               
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main> <div class="container py-5 text-center">
+                        <h4 class="mb-4">Các kiểu Tooltip Bootstrap 5</h4>
+                        <button type="button" class="btn btn-primary m-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip trên">Primary</button>
+                        <button type="button" class="btn btn-secondary m-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip phải">Secondary</button>
+                        <button type="button" class="btn btn-success m-2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip dưới">Success</button>
+                        <button type="button" class="btn btn-danger m-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip trái">Danger</button>
+                        <button type="button" class="btn btn-warning m-2 text-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip vàng">Warning</button>
+                        <button type="button" class="btn btn-info m-2 text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip xanh nhạt">Info</button>
+                        <!-- Tooltip dạng link -->
+<a href="#" class="m-2 d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip trên link">Link tooltip</a>
+<!-- Tooltip dạng icon -->
+<span class="m-2 d-inline-block" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip trên icon">
+    <i class="bi bi-info-circle fs-3 text-primary"></i>
+</span>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+                </div>
+                
+                <script>
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                        new bootstrap.Tooltip(tooltipTriggerEl);
+                    });
+                </script>
+                </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
